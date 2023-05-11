@@ -68,6 +68,26 @@
             android:layout_marginEnd="100dp"
             android:layout_marginStart="100dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Norman Romero [000031807]"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Jorge Chávez [000032264]"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            />
+
     </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
