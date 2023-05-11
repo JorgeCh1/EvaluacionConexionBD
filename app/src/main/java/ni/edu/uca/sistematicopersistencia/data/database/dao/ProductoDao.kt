@@ -12,8 +12,8 @@ interface ProductoDao {
     @Query("SELECT * FROM TblProducto WHERE id= :id")
     fun obtRegistro(id:Int):Flow<EntityProducto>
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertarReg(producto: EntityProducto)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertarReg(producto: EntityProducto) : Long
 
     @Update
     suspend fun actualizarReg(producto: EntityProducto)
